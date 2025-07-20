@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nature Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- header. Contains the title and a short tagline about what this page is focused on. -->
+  <header>
+    <div class="header-content">
+      <h1>Nature Gallery</h1>
+      <p class="tagline">Focused on Positioning, floating - text and images, padding, margin, border and
+flexbox.</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Float section. Shows a floated image with wrapping text. Also includes a clear fix at the bottom. -->
+    <section class="float-section">
+      <h2> Floated Image</h2>
+      <!-- Floated image.  wraps with the paragraph to the right -->
+      <img src="images/image1.jpg" alt="floating example" class="float-img" />
+      <p>
+        This is some text next to the floating image. Now I'm just putting filler words in. I chose to do a nature theme for this project because the world is just so pretty.
+        A dream of mine is to travel the world and see all her beauty.
+      </p>
+      <!-- Clearfix div to prevent breaking below float, Makes it look nicer and cleaner -->
+      <div style="clear: both;"></div>
+    </section>
+
+    <!--  Flexbox layout section. Lays out three images in a responsive flex container. -->
+    <section class="flex-section">
+      <h2>Flexbox Images</h2>
+      <div class="flex-container">
+        <!-- Each flex-item is styled like a card -->
+        <div class="flex-item">
+          <img src="images/image2.jpg" alt="flex image 1" />
+          <p>Green Valley</p>
+        </div>
+        <div class="flex-item">
+          <img src="images/image3.jpg" alt="flex image 2" />
+          <p>Cliffside Beach</p>
+        </div>
+        <div class="flex-item">
+          <img src="images/image4.jpg" alt="flex image 3" />
+          <p>Mountain Range</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--  Footer with year and credit. -->
+  <footer>
+    <p>&copy; 2025 Juan Garcia — CSS Layout - Nature Gallery</p>
+  </footer>
+
+</body>
+</html>
