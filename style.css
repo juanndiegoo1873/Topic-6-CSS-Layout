@@ -1,0 +1,110 @@
+
+/* consistent font and background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f1e14; /* dark greenish background for nature theme */
+  color: #e0f2e9; /* light text for good contrast */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style all links globally */
+a {
+  color: #a4e5b5; /* pastel green */
+}
+
+
+/* Header Styles */
+
+header {
+  /* Adds gradient for visual interest in header */
+  background: linear-gradient(to right, #1f4422, #2a5c33);
+  padding: 40px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* subtle shadow below */
+}
+
+.header-content {
+  text-align: center;
+  color: #e5f9ea;
+}
+
+.header-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px #0e1e15; /* adds contrast to text */
+  letter-spacing: 1px; /* slight spacing to make it nicer */
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #b6e3c7;
+  font-style: italic; /* emphasizes it's a subheading, makes it stand out */
+}
+
+
+/* Float Section Styles */
+
+.float-section {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+  /* Could eventually make this responsive */
+}
+
+.float-img {
+  float: left;
+  width: 200px;
+  max-height: 200px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border: 3px solid #2a5c33;
+  border-radius: 8px;
+  object-fit: cover; /* keeps image proportionally cropped */
+}
+
+
+/* Flexbox Styles  */
+
+.flex-section {
+  background-color: #152d1b; /* darker background to contrast from float section */
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  gap: 30px; /* spacing between image cards, played around with this not sure what looks the best */
+  justify-content: center;
+  flex-wrap: wrap; /* makes sure items stack on smaller screens */
+}
+
+.flex-item {
+  background-color: #1e3b25;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+  width: 160px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); /* light card shadow, makes it looks more crisp */
+}
+
+.flex-item img {
+  width: 100%;
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: cover; /* makes sure its cropped without distortion */
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+
+/*  Footer Styles  */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1c3022;
+  color: #a4e5b5;
+  font-size: 0.9rem;
+}
